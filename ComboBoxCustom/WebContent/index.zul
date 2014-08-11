@@ -1,0 +1,24 @@
+<!--  karena dalam listhead pada saat user mengetik maka akan muncul optional pada deklarasi array kita -->
+<zk>
+<zscript>
+	<!--  disini kita akan mendeklarasikan sebuah kata menggunakan array... -->
+	String[] pemograman = {"Java","C++","C#","Haskel","Java SCript","Basic","Shell","Ruby","Fortran","cobol","HTML","PHP","Visual Basic"};
+</zscript>
+
+<bandbox id="band" mold="rounded" autodrop="true">
+		<bandpopup>
+		
+		<listbox height="250px" width="450px" mold="paging" autopaging="true"
+		 onSelect="band.value=self.selectedItem.label; band.close();">
+		 <!-- bisa jalan tapi belum bisa di gunakan untuk comboBox yang akan di tampilkan dari pemoggraman -->
+		<listhead>
+			<listheader label="Bahasa Pemograman"/>
+		</listhead>
+		<listitem label="${each}" forEach="${pemograman}" <!-- label di ambil dari deklasi each dan each di tujukan pada deklarasi pemograman-->/>
+		</listbox>
+		</bandpopup>
+</bandbox>
+</zk>
+
+<!-- dalam pendeklarasian pada zk ini sendiri hampir sama persis dengan bahasa php... -->
+<!-- jadi bila teman teman sudah mahir dalam bahasa web lainnya insya allah bisa dengan mudah memahami zk sendiri.. -->

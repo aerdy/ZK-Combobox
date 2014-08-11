@@ -1,0 +1,12 @@
+<!-- sebelumnya kita akan menggunakan java class untuk menggunakan data yang akan kita masukkan -->
+
+<zk>
+	<combobox id="autocomplete" autodrop="true" mold="rounded" buttonVisible="false"/>
+	<zscript><![CDATA[ 
+	ListModel dictModel = new SimpleListModel(data.StringData.getData());
+	autocomplete.setModel(dictModel);
+	]]>
+	</zscript>
+</zk>
+
+<!-- Mungkin itu saja selamat mencoba ... bila ada sedikit kurang paham bisa pm di annabe.web.id -->

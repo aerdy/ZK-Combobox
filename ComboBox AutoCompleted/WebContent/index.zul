@@ -1,0 +1,7 @@
+<zk>
+	<combobox id="combo" autodrop="true" mold="rounded" buttonVisible="false"/>
+	<zscript><![CDATA[
+		ListModel dictModel= new SimpleListModel(data.Snippet.getDirectory());
+		combo.setModel(dictModel);
+	]]></zscript>
+</zk>
